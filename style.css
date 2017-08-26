@@ -1,3 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/public.css" rel="stylesheet" type="text/css" />
+<link href="css/page.css" rel="stylesheet" type="text/css" />
+<title>图片轮播</title>
+</head>
+<-----------------html源码-------------->
+<style>
+	/*.menuSection{
+	  display: none;
+	}
+	
+	#brand:target{这里的:target就是指id="brand"的div对象
+	  display:block;
+	}*/
+	body{
+		overflow:hidden;
+	}
+	
+</style>
+
+<body>
+
+	<span class="bg1">
+        <a href="#bg1" class="link1"> </a>
+        <p class="p1">Future science</p>
+        <p>And technology</p>
+    </span>
+    <div id="bg1" class="div1"><img src="image/5925a74830ebb.jpg"></div>
+    
+    <span class="bg2">
+    	<a href="#bg2" class="link2"></a>
+        <p class="p1">Future science</p>
+        <p>And technology</p>
+    </span>
+    <div id="bg2" class="div2"><img src="image/5925a74830faf.jpg"></div>
+    
+    <span class="bg3">
+        <a href="#bg3" class="link3"></a>
+        <p class="p1">Future science</p>
+        <p>And technology</p>
+    </span>  
+    <div id="bg3" class="div3">
+    	<img src="image/5925a74831063.jpg">
+        <div class="sub3"></div>
+    </div>
+   
+    <span class="bg4">
+        <a href="#bg4" class="link4"></a>
+        <p class="p1">Future science</p>
+        <p>And technology</p>
+    </span>
+    <div id="bg4" class="div4">
+    	<img src="image/5925a74831111.jpg">
+         <div class="sub4" key=""></div>
+    </div>    
+</body>
+</html>
+<-----------------这是css样式-------------->
+
+@charset "utf-8";
+html,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p,img{padding:0; margin:0;}
+img{vertical-align:top; border:none;}
+button,select,textarea{outline:none}
+figure,form,fieldset{border:0; margin:0; padding:0;}
+input{ outline:none;}
+b{text-decoration:none};
+textarea{resize:none;}
+ul,li{list-style-type:none;}
+img, object{max-width:100%;}
+body{margin:0; padding:0; font-size:87.5%; font-family:verdana,Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,STHeiti; width:100%; color:#646663; background:#fff;}
+a{color:#646663; text-decoration:none;}
+.c:after {content:"\200B"; display:block; height:0; clear:both;}
+.c{*zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+.fn{float:none;}
+.bg{background:#fff;}
+
 
 div{
 	width:100%;
@@ -5,7 +86,6 @@ div{
 	position:absolute;
 	left:0px;
 }
-
 @keyframes gogo{
 	25%{
 		opacity:0.25;
@@ -46,8 +126,6 @@ div{
 		transform:rotate(360deg);
 	}
 }
-
-
 .div1{
 	top:0px;
 	display:block;
@@ -75,7 +153,6 @@ div{
 	-webkit-animation:gogo2 5s infinite linear;
 
 }
-
 .sub4{
 	display:block;
 	width:500px;
@@ -89,16 +166,10 @@ div{
 	left:720px;
 	-webkit-animation:gogo2 5s infinite linear;
 }
-
-
-
 .div4{
 	bottom:-100%;
 	display:block;
 }
-
-
-
 #bg1:target{
 	animation:gogo 1s ease;
 	top:0px;
@@ -106,7 +177,6 @@ div{
 	transition:all;
 	transition-duration:0.5s;
 }
-
 #bg2:target,.div1{
 	left:0px;
 	display:block;
@@ -125,7 +195,6 @@ div{
 	transition:all;
 	transition-duration:0.5s;
 }
-
 span{
 	display:block;
 	position:absolute;
@@ -138,7 +207,6 @@ span{
 	text-align:center;
 	padding-bottom:10px;
 }
-
 .bg1{
 	background:url(../image/5925a74830ebb.jpg);
 	left:500px;
@@ -177,6 +245,7 @@ span a:hover{
 	opacity:0.8;	
 }
 
+
 span .link1{
 	background:url(../image/5925a74830ebb.jpg) no-repeat;
 	background-size:200%;
@@ -198,3 +267,5 @@ span .link4{
 	background-size:200%;
 	background-position:left 50% center;
 }
+
+
